@@ -1,0 +1,29 @@
+<my-navbar></my-navbar>
+<form class="login-form">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12"></div>
+
+      <div class="row margin">
+        <div class="col-sm-6 col-sm-offset-3">
+          <label><b>USERNAME</b></label>
+          <input type="text" id="name" placeholder="Enter Username" name="name" required minlength="4" maxlength="24">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+          <label><b>PASSWORD</b></label>
+          <input type="password" id="password" placeholder="Enter Password" name="password" required minlength="4" maxlength="24">
+        </div>
+      </div>
+
+
+      <button type="submit" value="Submit" (click)="LoginFun()">Login</button>
+      <br><br>
+      <a class="link" routerLink="/signup"><b>New User? Signup now...</b></a>
+    </div>
+  </div>
+
+</form>
